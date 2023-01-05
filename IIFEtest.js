@@ -1,9 +1,14 @@
 let global = "Hello";
 
-function something(data) {
-    console.log("hello");
-    return console.log(data);
-    
-};
+let res = (function something(data) {
+    console.log("This is test!");
+    var b = "Nothing";
+    console.log(data);
+    console.log(global);
 
-console.log(something(5));
+    return function() {
+        console.log(b);
+    };
+})("text");
+
+console.log(res());
