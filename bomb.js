@@ -7,15 +7,15 @@ let field = [
 ];
 
 function bomb(x,y,arr) {
-    if( !(x<0 ||
-        x>=arr.length ||
-        y < 0 ||
-        y>=arr[x].length) ) 
-    {
-        const copy = JSON.parse(JSON.stringify(arr));
-        copy[x][y] = "$";
-        console.table(copy);
-    }
+    // if( !(x<0 ||
+    //     x>=arr.length ||
+    //     y < 0 ||
+    //     y>=arr[x].length) ) 
+    // {
+    //     const copy = JSON.parse(JSON.stringify(arr));
+    //     copy[x][y] = "$";
+    //     console.table(copy);
+    // }
     
 
     if(
@@ -37,6 +37,6 @@ function bomb(x,y,arr) {
 
 }
 
-bomb(2, 2, field);
+bomb(2, 4, field);
 
 console.table(field);
