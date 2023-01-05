@@ -1,14 +1,13 @@
 let global = "Hello";
 
 let res = (function something(data) {
-    console.log("This is test!");
-    var b = "Nothing";
-    console.log(data);
-    console.log(global);
+    // console.log("This is test!");
+   
+    
 
     return function() {
-        console.log(b);
+        console.log(data);
     };
 })("text");
 
-console.log(res());
+res();
