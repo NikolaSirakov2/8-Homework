@@ -5,7 +5,7 @@ let num = 5;
 // }
 
 function print(num, i){
-    if(i === 0){
+    if(i === num){
         return;
     }
 
