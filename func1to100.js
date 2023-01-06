@@ -1,4 +1,5 @@
-let num = 100;
+let num = y;
+let startNum = x;
 
 function oneToHundred(number, start){
     if(start === number + 1){
@@ -9,4 +10,4 @@ function oneToHundred(number, start){
     oneToHundred(number, ++start);
 }
 
-oneToHundred(num, 1);
+oneToHundred(num, startNum);
