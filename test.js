@@ -15,8 +15,8 @@ function errase(arr){
     return arr;
 }
 
-errase(ca);
-console.log(ar === ca);
+errase(ar,ca);
+console.log(ar);
 console.log(ca);
 
 // let n = 4;
