@@ -9,7 +9,13 @@
 let ar = [2,4,5];
 let ca = [2,4,5];
 
+function errase(arr){
+    arr.length = 0;
 
+    return arr;
+}
+
+errase(ca);
 console.log(ar === ca);
 console.log(ca);
 
