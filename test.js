@@ -20,9 +20,12 @@ let m = 5;
 let matrix = [];
 
 for (let i = 0; i < n; i++) {
+    let arr = [];
   for (let k = 0; k < m; k++) {
-    matrix.push(new Array(4, 4));
+    arr.push(5);
   }
+
+  matrix.push(arr);
 }
 
 console.table(matrix);
