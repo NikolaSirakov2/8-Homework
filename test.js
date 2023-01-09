@@ -7,15 +7,17 @@
 // console.log(c);
 
 let ar = [2,4,5];
-let ca = [2,4,5];
+let ca = ar;
+ca[2] = 8;
 
-function errase(arr){
-    arr.length = 0;
+// function errase(arr){
+//     arr.length = 0;
 
-    return arr;
-}
+//     return arr;
+// }
 
-errase(ar,ca);
+// errase(ar,ca);
+console.log(ar[2] === ca[2]);
 console.log(ar);
 console.log(ca);
 
