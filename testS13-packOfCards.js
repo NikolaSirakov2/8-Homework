@@ -16,11 +16,12 @@ let input = [
 let packs = 0;
 let count = 0;
 
-for (let j = 0; j < input.length; j++) {
-  let array = input[j].split(" ");
-  console.log(array);
 
-  while (packs < 4) {
+
+  while (packs !== 4) {
+    for (let j = 0; j < input.length; j++) {
+        let array = input[j].split(" ");
+        
     for (let i = 0; i <= array.length + 1; i++) {
       let card = array[0];
       array.shift();
