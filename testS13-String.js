@@ -1,14 +1,14 @@
 let string =
-  "Today is a good day for test. The sun is shining. The students are happy. The birds are blue.";
-let array = string.split(". ");
+  "Today is a good day for test. The sun is shining. The students are happy. The birds are lightblue.";
+let array = string.split(".");
 
-console.log(`Total sentences: ${array.length}`);
+console.log(`Total sentences: ${array.length - 1}`);
 
 let longestSentence = 0;
 let longestWord = 0;
 let sentenceWithLongestWord = 0;
 
-for (let i = 0; i < array.length; i++) {
+for (let i = 0; i < array.length - 1; i++) {
     if (i > 0) {
     if (array[i].length > array[i-1].length && array[i].length > array[0].length) {
       longestSentence = i;
