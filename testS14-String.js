@@ -1,7 +1,6 @@
-let string =  "After this test I will Unfriend Slavi on FB";
+let string =  "After this test I will Unfr Slavi on FaceBooks";
 
 let array = string.toLowerCase().split(" ");
-let result = [];
 
 for(let i = 0; i < array.length; i++){
     if(array[i].length > 6){
