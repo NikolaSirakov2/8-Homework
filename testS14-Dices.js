@@ -1,7 +1,7 @@
 let biggestRoll = 0;
 let tryes = 0;
 
-while(biggestRoll < 6){
+while(biggestRoll !== 6){
     let rollOne = Math.ceil(Math.random()*6);
     let rollTwo = Math.ceil(Math.random()*6);
     let rollThree =  Math.ceil(Math.random()*6);
