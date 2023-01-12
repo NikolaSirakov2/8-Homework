@@ -1,4 +1,4 @@
-let string =  "Today is a grЕat day for Тest";
+let string =  "After this test I will Unfriend Slavi on FB";
 
 let array = string.toLowerCase().split(" ");
 let result = [];
