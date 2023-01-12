@@ -20,11 +20,15 @@ for (let j = 0; j < input.length; j++) {
   let array = input[j].split(" ");
   count++;
 
+  // if (!correctInput.includes(array[array.length-1])) {
+  //   console.log("Invalid cards given!");
+  //   packs = 0;
+  // }
+
   for (let i = 0; i <= array.length + 1; i++) {
     let last = array.length + 1;
     let card = array[0];
     array.shift();
-    
 
     if (correctInput.includes(card)) {
       if (array.includes(card)) {
@@ -36,12 +40,17 @@ for (let j = 0; j < input.length; j++) {
       }
 
       if (i === last) {
-        packs = 0;
+        if (!correctInput.includes(card)) {
+          console.log("Invalid cards given!");
+          packs = 0;
+        } else {
+          packs = 0;
+        }
       }
     } else {
       console.log("Invalid cards given!");
       packs = 0;
-      count = count -1;
+      count = count - 1;
       break;
     }
   }
