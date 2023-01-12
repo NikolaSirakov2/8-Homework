@@ -1,4 +1,4 @@
-let array = [4, 6, 11, -1, 0, 15];
+let array = [4, 6, 11, -1, 0, 15, 0];
 let oddOrEven = 0;
 
 function oddOrEvenCheck(arr, start){
