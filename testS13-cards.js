@@ -1,23 +1,32 @@
-
 let pairs = 0;
 let count = 0;
-let validCards = "123456789PETJQKA";
+let allCards = "123456789PETJQKA";
+let validCards = "23456789TJQKA";
 
-while(pairs < 4){
-    let cardOne = validCards[Math.ceil(Math.random())*17 - 1];
-    let cardTwo = validCards[Math.ceil(Math.random())*17 - 1];
-    let cardThree = validCards[Math.ceil(Math.random())*17 - 1];
-    let cardFour = validCards[Math.ceil(Math.random())*17 - 1];
-    let cardFive = validCards[Math.ceil(Math.random())*17 - 1];
-    let input = "" + cardOne + cardTwo + cardThree + cardFour + cardFive;
+while (pairs < 4) {
+  let cardOne = allCards[Math.floor(Math.random() * allCards.length)];
+  let cardTwo = allCards[Math.floor(Math.random() * allCards.length)];
+  let cardThree = allCards[Math.floor(Math.random() * allCards.length)];
+  let cardFour = allCards[Math.floor(Math.random() * allCards.length)];
+  let cardFive = allCards[Math.floor(Math.random() * allCards.length)];
+  let input = "" + cardOne + cardTwo + cardThree + cardFour + cardFive;
+    count++;
 
     console.log(input);
 
-    pairs++;
+  for (let i = 0; i < input.length; i++) {
+        if(!validCards.includes(input[i])){
+            console.log("Invalid cards given!");
+            pairs = 0;
+            count--;
+            break;
+        }
+
+        if(input.indexOf(input[i]) !== input.lastIndexOf(input[i])){
+            pairs++;
+            break;
+        }
+  }
 }
 
-// let array = input.split(" ");
-
-// for(let i = 0; i < array.length; i++){
-    
-// }
+console.log(`Number of tries: ${count}`);
