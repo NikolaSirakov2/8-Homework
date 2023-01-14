@@ -20,13 +20,14 @@ while (pairs < 4) {
             pairs = 0;
             count--;
             break;
-        }
-
+        } else if(input.indexOf(input[i]) !== input.lastIndexOf(input[i])){
         if(input.indexOf(input[i]) !== input.lastIndexOf(input[i])){
             pairs++;
             break;
         }
+    }
   }
 }
 
+console.log(pairs);
 console.log(`Number of tries: ${count}`);
